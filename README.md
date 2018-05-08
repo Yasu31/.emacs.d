@@ -1,5 +1,5 @@
 # Emacs
-On mac, to get the latest version, install with brew and some new version (e.g. `emacs-25.3`) is installed. So in ~/.bash_profile, just make an alias that maps "emacs" to "emacs-25.3". The config file is in *~/.emacs.d/init.el*
+On mac, to get the latest version, install with brew and some new version (e.g. `emacs-25.3`) is installed. So in *~/.bash_profile*, just make an alias that maps "emacs" to "emacs-25.3". The config file is in *~/.emacs.d/init.el*
 
 On Ubuntu, per [this article](https://qiita.com/ytoda129/items/58078d8c7e74d9144014), install emacs25.
 
