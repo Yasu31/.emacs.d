@@ -1,1 +1,5 @@
 *.el~
+elpa/*
+games/*
+auto-save-list/*
+snippets/*
