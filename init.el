@@ -8,7 +8,7 @@
 
 (add-to-list 'package-archives
        '("melpa" . "http://melpa.org/packages/") t)
-
+(set-face-attribute 'default nil :height 100)
 (package-initialize)
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -20,7 +20,9 @@
     material-theme
     py-autopep8
     magit
-    markdown-mode))
+    markdown-mode
+    pug-mode))
+
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
@@ -54,7 +56,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (markdown-mode magit py-autopep8 flycheck elpy material-theme better-defaults))))
+    (pug-mode markdown-mode magit py-autopep8 flycheck elpy material-theme better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -65,3 +67,5 @@
 ;; correctly highlight ros launch files as XML files
 ;; http://wiki.ros.org/roslaunch/Tutorials/Using%20Roslaunch%20with%20Emacs
 (add-to-list 'auto-mode-alist '("\\.launch$" . xml-mode))
+(add-to-list 'auto-mode-alist '("\\.urdf$" . xml-mode))
+(add-to-list 'auto-mode-alist '("\\.xacro$" . xml-mode))
