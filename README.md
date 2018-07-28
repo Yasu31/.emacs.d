@@ -8,12 +8,13 @@ On Ubuntu, per [this article](https://qiita.com/ytoda129/items/58078d8c7e74d9144
 * M-b M-f to go f/b one word
 * C-a C-e to go to ends of line
 * C-k kills whole line, if nothing is selected
-
+* C-h b shows all commands
 ## python
-
 
 * [Emacs – The Best Python Editor?](https://realpython.com/emacs-the-best-python-editor/)
 : this article has tips for setting up basic emacs, too
+
+also install: `pip install jedi flake8 autopep8`
 
 ctrl-c ctrl-c to execute python
 
@@ -47,3 +48,6 @@ Use [markdown-mode](https://jblevins.org/projects/markdown-mode/)
 * C-c C-l inserts link
 * To generate previews and such, use the  *libtext-multimarkdown-perl* and *perl-doc* packages
 * to view preview of current Markdown in a browser, C-c C-c p
+
+## files created by emacs
+"filename~" is created as a backup of the past version of the file, "#filename#" is created as auto-save files.
