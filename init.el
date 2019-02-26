@@ -21,7 +21,11 @@
     py-autopep8
     magit
     markdown-mode
-    pug-mode))
+    markdown-preview-mode
+    pug-mode
+    websocket
+    web-server
+    uuidgen))
 
 
 (mapc #'(lambda (package)
@@ -43,6 +47,8 @@
 (require 'company)
 (global-company-mode) 
 
+; requires `brew install markdown` as well
+(autoload 'markdown-preview-mode "markdown-preview-mode.el" t)
 
 (when (require 'flycheck nil t)
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
@@ -56,7 +62,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (pug-mode markdown-mode magit py-autopep8 flycheck elpy material-theme better-defaults))))
+    (pug-mode magit py-autopep8 flycheck elpy material-theme better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
