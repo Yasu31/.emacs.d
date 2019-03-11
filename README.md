@@ -9,6 +9,8 @@ On Ubuntu, per [this article](https://qiita.com/ytoda129/items/58078d8c7e74d9144
 * C-a C-e to go to ends of line
 * C-k kills whole line, if nothing is selected
 * C-h b shows all commands
+
+If you have trouble downloading packages, try doing `M-x package-refresh-contents`.
 ## python
 
 * [Emacs – The Best Python Editor?](https://realpython.com/emacs-the-best-python-editor/)
