@@ -79,3 +79,17 @@
 ;;(setq markdown-command 'gfm-mode)
 (autoload 'gfm-mode "markdown-mode"
    "Major mode for editing GitHub Flavored Markdown files" t)
+
+(load "${CVSDIR}/jsk_common/jsk_tools/dot-files/dot.emacs") ;; jsk標準
+;; (load "${CVSDIR}/jsk_tendon_robot/install/tendon-init.el") ;; 必要に応じて
+
+
+;; related to euslime https://github.com/furushchev/euslime
+(add-to-list 'load-path "~/euslime_dir/slime")
+(add-to-list 'load-path "~/euslime_dir/euslime")
+(add-to-list 'load-path "~/euslime_dir/slime-repl-ansi-color")
+(require 'slime-autoloads)
+(require 'euslime)
+(setq inferior-lisp-program "sbcl")
+(setq inferior-euslisp-program "roseus")
+(setq slime-contribs '(slime-fancy slime-repl-ansi-color))

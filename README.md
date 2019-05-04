@@ -53,3 +53,22 @@ Use [markdown-mode](https://jblevins.org/projects/markdown-mode/)
 
 ## files created by emacs
 "filename~" is created as a backup of the past version of the file, "#filename#" is created as auto-save files.
+
+## euslime Main Commands:
+### On slime buffer:
+[TAB] completion
+C-c C-d d: describe/ help
+C-c C-d a: apropos
+C-c C-d p: apropos package
+M-. : look for definition
+C-c [RET]: macroexpansion
+,quit : quit euslime session
+,restart-inferior-lisp : restart euslime session
+
+### On editing buffers:
+C-c C-c: load expression
+C-c C-l: load-file
+
+### On other slime buffers:
+q: quit buffer
+[RET]: select option
